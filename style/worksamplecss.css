@@ -132,6 +132,12 @@ h3 {
         transform: scale(0.9);
     }
     .content {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 380px) {
+    .content {
         font-size: 50%;
     }
 }
