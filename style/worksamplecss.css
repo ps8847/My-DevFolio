@@ -2,61 +2,83 @@
     font-family: "Poppins", sans-serif;
 }
 
-.work .work-content .left {
-    width: 65%;
-}
 
-.work .work-content .right {
-    width: 35%;
-}
+/* .taskify {
+    background-image: url("worksampleimg/taskify.png");
+} */
 
-.work .work-content .right .text {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-left: 20px;
+h3 {
     color: red;
+    font-weight: bold;
 }
 
-.work .work-content .right .text h5 {
-    color: #222;
-}
-
-.right-content {
-    margin: 10px;
-}
-
-.work .work-content .right .aboutwork {
+.card1 img,
+.card2 img {
+    padding-top: 25px;
+    /* object-fit: cover; */
     width: 100%;
-    height: 300px;
-    background-color: #222;
-    border-radius: 6px;
-    padding: 20px;
-    justify-content: space-between;
+    height: 250px;
 }
 
-.work .work-content .right .aboutwork div {
-    margin-bottom: 15px;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.work .work-content .right .aboutwork .aboutheading {
-    color: yellow;
+.content {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    /* text-align: center; */
 }
 
-.work .work-content .right .aboutwork .ans {
-    color: #fff;
-}
-
-.work .work-content .right .text span {
-    color: red;
-}
-
-.work .work-content .right p {
-    text-align: justify;
-}
-
-.work .work-content .right .linkedin {
+.card1 {
     display: inline-block;
+    position: relative;
+    align-items: center;
+    /* margin-top: 20px; */
+    /* margin-right: 20px; */
+    padding: 15px;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.card2 {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px;
+    margin-left: 100px;
+    /* background-image: url("../worksampleimg/weather.png");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.overlay .content .SourceCode,
+.liveLink {
+    display: inline-block;
+    font-weight: bold;
     background: blue;
     color: #fff;
     font-size: 15px;
@@ -68,76 +90,45 @@
     transition: all 0.3s ease;
 }
 
-.work .work-content .right .linkedin:hover {
+.overlay .content .SourceCode:hover,
+.liveLink:hover {
     color: blue;
+    font-weight: bold;
     background: none;
 }
 
-.work .work-content .right .github {
-    display: inline-block;
-    background: red;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 5px 25px;
-    margin: 15px;
-    border-radius: 6px;
-    border: 2px solid black;
-    transition: all 0.3s ease;
+.overlay:hover {
+    opacity: 0.9;
 }
 
-.work .work-content .right .github:hover {
-    color: black;
-    background: none;
-}
-
-.work .work-content .left img {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    /* object-fit: cover; */
-    border-radius: 6px;
-    border-radius: 2px;
-    border: 5px solid black;
-}
-
-
-/* .work .work-content .left img:hover {
-    cursor: pointer;
-    opacity: 0.3;
-} */
-
-.work .work-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.card {
-    margin-top: 20px;
-    overflow: scroll;
-    padding: 15px;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
-    border-radius: 5px;
-    width: 100%;
-    height: 450px;
-    overflow-x: hidden;
+.card1:hover,
+.card2:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 950px) {
-    .work .work-content .column img {
-        align-items: center;
-        width: 150%;
-        height: 300px;
+    .card1 {
+        width: 100%;
+        height: 250px;
+        transition: 0.3s;
+        padding: 10px;
     }
-    /* .work .work-content .left {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    } */
-    .work .work-content .right {
-        flex: 100%;
+    .card2 {
+        margin-left: 0px;
+        width: 100%;
+        height: 250px;
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .card1 img,
+    .card2 img {
+        padding-top: 25px;
+        /* object-fit: cover; */
+        width: 100%;
+        height: 200px;
+    }
+    .card1:hover,
+    .card2:hover {
+        transform: scale(0.9);
     }
 }
