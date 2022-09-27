@@ -131,4 +131,7 @@ h3 {
     .card2:hover {
         transform: scale(0.9);
     }
+    .content {
+        font-size: 80%;
+    }
 }
