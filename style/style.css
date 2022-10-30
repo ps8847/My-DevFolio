@@ -12,8 +12,27 @@ font-family: 'Ubuntu', sans-serif; */
 
 html {
     scroll-behavior: smooth;
+
 }
 
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    width:13px;
+    background:black;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+    width: 30px;
+    height: 35%;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
 
 /* navbar design  */
 
@@ -601,33 +620,109 @@ section .title::after {
     background: red;
 }
 
+.hide2{
+    display:none;
+}
+
 .skills .skills-content .right .html::before {
     width: 80%;
+    animation: html 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .css::before {
     width: 65%;
+    animation: css 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .js::before {
     width: 70%;
+    animation: js 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .node::before {
     width: 60%;
+    animation: node 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .mysql::before {
     width: 60%;
+    animation: mysql 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .bs::before {
     width: 75%;
+    animation: bs 3s;
+    animation-iteration-count: infinite;
 }
 
 .skills .skills-content .right .es::before {
     width: 70%;
+    animation: es 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:65%;
+    }
+}
+@keyframes js{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes node{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+}
+@keyframes bs{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:75%;
+    }
+}
+@keyframes es{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+
 
 
 /* work sample design  */
