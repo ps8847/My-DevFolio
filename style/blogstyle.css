@@ -56,6 +56,24 @@ footer {
     text-align: center;
 }
 
+.resume {
+    display: inline-block;
+    background: darkred;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid darkred;
+    transition: all 0.3s ease;
+}
+
+.resume:hover {
+    color: red;
+    background: none;
+}
+
 footer span a {
     color: red;
     text-decoration: none;

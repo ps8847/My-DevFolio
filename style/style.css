@@ -269,7 +269,7 @@ html {
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
-    min-height: 1000px;
+    min-height: 350px;
     overflow: hidden;
     position: relative;
     top: -50px;
