@@ -192,6 +192,11 @@ h3 {
     .content {
         font-size: 80%;
     }
+    .card2 .card2Elem span img{
+        display: inline-block;
+        height: 50px;
+        width: 30px;
+    }
 }
 
 @media (max-width: 380px) {
