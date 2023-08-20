@@ -278,6 +278,67 @@ html {
 }
 
 
+/* experince section  */
+
+/* Add this to your existing style.css or within a <style> tag in your HTML */
+
+/* Experience Section */
+.experience {
+    padding: 80px 0;
+}
+
+.experience-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.experience-role {
+    margin: 5px 0;
+    color: #777;
+    font-weight: bold;
+}
+
+.experience-description {
+    margin: 5px 0;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    background-color: black;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    padding: 5px;
+    color: #f5f5f5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.experience-info {
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ... (your existing styles) ... */
+
+
 /* about section edit  */
 
 .about .title::after {

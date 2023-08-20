@@ -77,3 +77,19 @@ const age = document.getElementById("age");
 let agestr = year.toString();
 let ans = agestr.substring(2);
 age.innerText = ans;
+
+    const experienceItems = document.querySelectorAll('.experience-item');
+
+    experienceItems.forEach(item => {
+        const dateRange = item.querySelector('.experience-date').textContent.split(' - ');
+        const startDate = new Date(dateRange[0]);
+        const endDate = new Date(dateRange[1]);
+        const today = new Date();
+
+        const totalDuration = endDate - startDate;
+        const elapsedDuration = today - startDate;
+
+        const progressPercentage = (elapsedDuration / totalDuration) * 100;
+        const progressBar = item.querySelector('.progress');
+        progressBar.style.width = progressPercentage + '%';
+    });
