@@ -44,7 +44,7 @@
 
     <!-- Home section  -->
 
-    <section class="home" id="home">
+    <section class="home fade-in"  id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, Welcome To My DevFo<span>lio</span></div>
@@ -61,7 +61,7 @@
 <!-- ... (previous HTML code) ... -->
 
 <!-- Experience section starts -->
-<section class="experience" id="experience">
+<section class="experience fade-in" id="experience">
     <div class="max-width">
         <h2 class="title">Experience</h2>
         <div class="experience-content">
@@ -96,7 +96,7 @@
 <!-- ... (rest of your HTML code) ... -->
 
     <!-- // about section starts -->
-    <section class="about" id="about">
+    <section class="about fade-in" id="about">
         <div class="max-width">
             <h2 class="title">About Me</h2>
             <div class="about-content">
@@ -137,7 +137,7 @@
 
 
     <!-- // services starts -->
-    <section class="services" id="services">
+    <section class="services fade-in" id="services">
         <div class="max-width">
             <h2 class="title">My Services</h2>
             <div class="services-content">
@@ -189,7 +189,7 @@
     <!-- skills section  -->
 
 
-    <section class="skills" id="skills">
+    <section class="skills fade-in" id="skills">
         <div class="max-width">
             <h2 class="title">My Skills</h2>
             <div class="skills-content">
@@ -202,11 +202,12 @@
                         <br>
                         <ul>
                             <li> <b> Adaptability : </b>I can learn and adapt any langauge/technology in very less time. </li>
-                            <li><b>Programming languages :</b> C/C++, Java, html, Css, scss, Python(basics) </li>
-                            <li><b>Scripting Language : </b>JQuery, JavaScript, Nodejs, Express.js, core php</li>
-                            <li><b> Framework : </b>Bootstrap , Reactjs , Laravel , REST , SOAP</li>
-                            <li><b> Database : </b>MongoDb, SQL Server , sql , Firebase</li>
-                            <li><b>Tools : </b>GIT, GitHub , ChatGPT</li>
+                            <li><b>Programming languages :</b> C/C++, Java, JavaScript , Python(basics) </li>
+                            <li><b>Scripting Language : </b>JQuery, JavaScript, Nodejs, Express.js, Core php</li>
+                            <li><b>Markup And Styling : </b>Html, Css, Sass , Material.ui , TailwindCss</li>
+                            <li><b> Framework : </b>Bootstrap , Reactjs , Laravel , Gatsby , REST , SOAP</li>
+                            <li><b> Database : </b> MongoDb, Sql , Firebase</li>
+                            <li><b>Tools : </b>GitHub , VsCode , Postman, ChatGPT</li>
                             <li><b>Others : </b>Problem Solving | Teaching | DSA</p>
                     </li>
                     </ul>
@@ -288,7 +289,7 @@
 
 
     <!-- teams section starts  -->
-    <section class="Blogs" id="Blogs">
+    <section class="Blogs fade-in" id="Blogs">
         <div class="max-width">
             <h2 class="title">My Blogs </h2>
             <div class="carousel owl-carousel">
@@ -336,7 +337,7 @@
 
     <!-- contect section starts  -->
 
-    <section class="contact" id="contact">
+    <section class="contact fade-in" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
@@ -403,8 +404,28 @@
     <script src="script.js"></script>
 </body>
 
+<script>
+    const sections = document.querySelectorAll('.fade-in');
+  
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const offset = window.innerHeight * 0.2; // Adjust this offset as needed
+  
+        if (rect.top < window.innerHeight - offset) {
+          section.classList.add('is-visible');
+        }
+      });
+    });
+  
+    // Trigger the scroll event to check elements initially
+    window.dispatchEvent(new Event('scroll'));
+  </script>
+  
+  
 </html>
 
+  
 
 <!-- 
 <a href="https://wa.me/+918847538102?text=Hey! Prince,">

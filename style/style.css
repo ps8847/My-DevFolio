@@ -34,6 +34,26 @@ html {
     transition: 0.5s ease;
 }
 
+/* animate */
+
+/* Add this to your CSS file (style/style.css) */
+/* Add this to your CSS file (style/style.css) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+
+
+
 /* navbar design  */
 
 .navbar {
