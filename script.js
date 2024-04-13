@@ -21,14 +21,14 @@ $(document).ready(function() {
   // tyoing animation
 
   var typed = new Typed(".typing", {
-    strings: ["Web Designer", "Web Developer", "Freelancer", "Blogger"],
+    strings: ["Web Designer", "Web Developer", "Freelancer", "Blogger", "Mobile App Developer" , "Full Stack developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing2", {
-    strings: ["Web Designer", "Web Developer", "Freelancer", "Blogger"],
+    strings: ["Web Designer", "Web Developer", "Freelancer", "Blogger" , "Mobile App Developer" , "Full Stack developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -68,15 +68,32 @@ $(document).ready(function() {
 
 const copyrightyear = document.getElementById("copyrightyear");
 
-let date = new Date();
-const year = date.getFullYear();
+// let date = new Date();
+// const year = date.getFullYear();
 
-copyrightyear.innerText = year;
+// copyrightyear.innerText = year;
 
-const age = document.getElementById("age");
-let agestr = year.toString();
-let ans = agestr.substring(2);
-age.innerText = ans;
+// const age = document.getElementById("age");
+// let agestr = year.toString();
+// let ans = agestr.substring(2);
+// age.innerText = ans;
+
+let currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
+copyrightyear.innerText = currentYear;
+
+const birthday = new Date(currentYear, 5, 25); 
+
+if (currentDate < birthday) {
+
+    const age = currentYear - 2000 - 1;
+    document.getElementById("age").innerText = age;
+  } else {
+    
+    const age = currentYear - 2000;
+    document.getElementById("age").innerText = age;
+}
 
     const experienceItems = document.querySelectorAll('.experience-item');
 

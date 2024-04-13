@@ -743,6 +743,12 @@ section .title::after {
     animation-iteration-count: infinite;
 }
 
+.skills .skills-content .right .rjs::before {
+    width: 90%;
+    animation: rjs 3s;
+    animation-iteration-count: infinite;
+}
+
 .skills .skills-content .right .mysql::before {
     width: 60%;
     animation: mysql 3s;
@@ -783,6 +789,14 @@ section .title::after {
     }
     100%{
         width:70%;
+    }
+}
+@keyframes rjs{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
     }
 }
 @keyframes node{
